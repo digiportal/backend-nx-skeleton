@@ -1,6 +1,6 @@
 import type { NormalizedSchema } from '../main.interface'
+import type { SchematicFiles } from '@digiportal/nx-tools'
 import { AvailableDBAdapters } from '@interfaces/available.constants'
-import type { SchematicFiles } from '@webundsoehne/nx-tools'
 
 /**
  * This constant includes the files that are required for different components.

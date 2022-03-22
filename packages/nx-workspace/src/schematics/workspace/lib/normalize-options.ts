@@ -3,9 +3,9 @@ import { Listr } from 'listr2'
 import { join } from 'path'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
+import { color, generateNameCases, isVerbose, mapPromptChoices, setSchemaDefaultsInContext } from '@digiportal/nx-tools'
 import { AvailableCLIs, AvailableFolderStructures, PrettyNamesForAvailableThingies } from '@interfaces/available.constants'
 import { calculateDependencies } from '@utils/versions'
-import { color, generateNameCases, isVerbose, mapPromptChoices, setSchemaDefaultsInContext } from '@webundsoehne/nx-tools'
 
 /**
  * Normalize the options passed in through angular-schematics.

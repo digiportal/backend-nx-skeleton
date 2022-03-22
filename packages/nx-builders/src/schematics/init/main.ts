@@ -2,9 +2,9 @@ import type { Rule, SchematicContext, Tree } from '@angular-devkit/schematics'
 import { chain } from '@angular-devkit/schematics'
 
 import type { Schema } from './main.interface'
+import { Logger } from '@digiportal/nx-tools'
 import { readNxBuildersWorkspaceIntegration } from '@integration/nx-builders'
 import { initiateBuilderDependencies } from '@utils/initiate-builder'
-import { Logger } from '@webundsoehne/nx-tools'
 
 /**
  * Install builder dependencies

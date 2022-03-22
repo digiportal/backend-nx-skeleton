@@ -3,8 +3,8 @@ import { updateJsonInTree } from '@nrwl/workspace'
 import { join } from 'path'
 
 import type { UpdatePackageJsonForProjectRuleOptions } from './update-package-json.rule.interface'
+import { deepMerge } from '@digiportal/deep-merge'
 import type { BaseNormalizedSchemaRoot } from '@interfaces/base-schemas.interface'
-import { deepMerge } from '@webundsoehne/deep-merge'
 
 export function updatePackageJsonForProjectRule<T extends BaseNormalizedSchemaRoot> (options: T, data: UpdatePackageJsonForProjectRuleOptions): Rule {
   return updateJsonInTree(join(options.root, 'package.json'), (json) => {

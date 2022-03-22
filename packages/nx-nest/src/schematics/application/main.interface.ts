@@ -1,3 +1,5 @@
+import type { AvailableTestsTypes, BaseNormalizedSchema, BaseSchema, BaseSchemaModes, GeneratedNameCases, SchemaExtensions, SchemaPriorConfiguration } from '@digiportal/nx-tools'
+import type { DeepPartial } from '@digiportal/ts-utility-types'
 import type {
   AvailableComponents,
   AvailableDBAdapters,
@@ -8,16 +10,6 @@ import type {
 } from '@interfaces/available.constants'
 import type { SchematicConstants } from '@interfaces/constants'
 import type { GeneratedMicroserviceCasing } from '@utils/generate-microservice-casing.interface'
-import type {
-  AvailableTestsTypes,
-  BaseNormalizedSchema,
-  BaseSchema,
-  BaseSchemaModes,
-  GeneratedNameCases,
-  SchemaExtensions,
-  SchemaPriorConfiguration
-} from '@webundsoehne/nx-tools'
-import type { DeepPartial } from '@webundsoehne/ts-utility-types'
 
 /**
  * This is the unparsed options list coming from angular-schematics

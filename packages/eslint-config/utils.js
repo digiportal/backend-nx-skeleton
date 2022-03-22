@@ -7,7 +7,7 @@ const { ALL_KNOWN_JAVASCRIPT_FILE_EXTENSIONS } = require('./constants')
  * @returns {import("eslint").Linter.Config['rules']}
  */
 function generateImportGroups (options) {
-  const defaults = ['@webundsoehne', '@webundsoehne-*']
+  const defaults = ['@digiportal', '@digiportal-*']
 
   options.paths = Array.isArray(options.paths) ? [...options.paths, ...defaults] : defaults
 

@@ -4,7 +4,7 @@ import { parseTargetString, readTargetOptions, runExecutor as baseRunExecutor } 
 import execa from 'execa'
 
 import type { ExecuteBuilderOptions, NormalizedExecuteBuilderOptions } from './main.interface'
-import { BaseExecutor, pipeProcessToLogger, runExecutor } from '@webundsoehne/nx-tools'
+import { BaseExecutor, pipeProcessToLogger, runExecutor } from '@digiportal/nx-tools'
 
 try {
   require('dotenv').config()

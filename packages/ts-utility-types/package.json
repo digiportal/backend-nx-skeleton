@@ -1,14 +1,15 @@
 {
-  "name": "@webundsoehne/ts-utility-types",
+  "name": "@digiportal/ts-utility-types",
   "description": "Some generic utility types that are used in more than one place now.",
-  "version": "1.0.0",
-  "author": "Backend <backend@webundsoehne.com>",
+  "version": "2.1.0",
+  "author": "Backend <backend@digiportal.com>",
   "license": "ISC",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@digiportal:registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "nestjs",

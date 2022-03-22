@@ -1,7 +1,7 @@
 import type { Rule, Tree } from '@angular-devkit/schematics'
 
 import type { NxBuildersWorkspaceIntegration } from './nx-builders.interface'
-import { readNxJsonIntegration, updateNxJsonIntegrationRule } from '@webundsoehne/nx-tools'
+import { readNxJsonIntegration, updateNxJsonIntegrationRule } from '@digiportal/nx-tools'
 
 /**
  * Reads the nx builders integration part of the nx.json.

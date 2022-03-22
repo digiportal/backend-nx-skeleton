@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$id": "@webundsoehne/nx-builders/ts-node-dev",
-  "title": "@webundsoehne/nx-builders/ts-node-dev",
+  "$id": "@digiportal/nx-builders/ts-node-dev",
+  "title": "@digiportal/nx-builders/ts-node-dev",
   "description": "Run ts-node-dev as a builder.",
   "type": "object",
   "properties": {

@@ -5,10 +5,10 @@ import { join } from 'path'
 import type { Schema as GeneratorSchema } from '../../generator/main.interface'
 import { getSchematicFiles, SchematicFilesMap } from '../interfaces/file.constants'
 import type { NormalizedSchema } from '../main.interface'
+import { deepMergeWithArrayOverwrite } from '@digiportal/deep-merge'
+import type { CreateApplicationRuleInterface } from '@digiportal/nx-tools'
+import { addSchematicTaskRule, applyOverwriteWithDiff, convertStringToDirPath, createApplicationRule, Logger } from '@digiportal/nx-tools'
 import { AvailableDBAdapters, AvailableGenerators } from '@interfaces/available.constants'
-import { deepMergeWithArrayOverwrite } from '@webundsoehne/deep-merge'
-import type { CreateApplicationRuleInterface } from '@webundsoehne/nx-tools'
-import { addSchematicTaskRule, applyOverwriteWithDiff, convertStringToDirPath, createApplicationRule, Logger } from '@webundsoehne/nx-tools'
 
 export function createApplicationFiles (options: NormalizedSchema): Rule {
   return (_host: Tree, context: SchematicContext): Rule => {

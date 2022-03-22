@@ -5,7 +5,7 @@ import type { Schema as NxSchema } from '@nrwl/workspace/src/generators/remove/s
 import { normalizeOptions } from './lib/normalize-options'
 import { updateIntegration } from './lib/update-integration'
 import type { Schema } from './main.interface'
-import { formatTreeRule } from '@webundsoehne/nx-tools'
+import { formatTreeRule } from '@digiportal/nx-tools'
 
 export default function (schema: Schema): Rule {
   return async (host: Tree, context: SchematicContext): Promise<Rule> => {

@@ -1,10 +1,10 @@
 import type { DependencyCalculatorOptions } from './dependency-calculator.interface'
 import { isDevelopmentMode } from './is-development-mode'
+import { deepMerge } from '@digiportal/deep-merge'
 import type { Dependency, DependencyCalculatorPackage, PackageVersions } from '@interfaces/versions.interface'
 import { Logger } from '@utils/logger/logger'
 import type { LocalNodeModule } from '@utils/package-manager'
 import { PackageManager } from '@utils/package-manager'
-import { deepMerge } from '@webundsoehne/deep-merge'
 
 /**
  * Calculates the dependencies with a given condition, returns the package versions merged.

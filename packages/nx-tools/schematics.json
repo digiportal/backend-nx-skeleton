@@ -1,5 +1,5 @@
 {
-  "name": "@webundsoehne/nx-tools",
+  "name": "@digiportal/nx-tools",
   "extends": ["@nrwl/workspace"],
   "schematics": {
     "exports": {

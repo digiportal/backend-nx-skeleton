@@ -1,6 +1,6 @@
 import type { Versions } from './versions.interface'
+import { LINTER_VERSIONS } from '@digiportal/nx-tools'
 import { AvailableCLIs } from '@interfaces/available.constants'
-import { LINTER_VERSIONS } from '@webundsoehne/nx-tools'
 
 export const VERSIONS: Versions = {
   base: {
@@ -12,8 +12,8 @@ export const VERSIONS: Versions = {
         '@angular-devkit/architect': '^0.1302.0',
         '@angular-devkit/core': '^13.2.0',
         '@angular-devkit/schematics': '^13.2.0',
-        '@webundsoehne-private/nx-workspace': '^4.0.0',
-        '@webundsoehne/nx-tools': '^5.0.5',
+        '@digiportal/nx-workspace': '^4.0.0',
+        '@digiportal/nx-tools': '^5.0.5',
         typescript: '^4.5.5',
         '@types/node': '^16',
         dotenv: '^14.2.0',

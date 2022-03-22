@@ -3,10 +3,10 @@ import { apply, chain, externalSchematic, url } from '@angular-devkit/schematics
 import { join } from 'path'
 
 import type { NormalizedSchema, ParsedMicroservice } from '../main.interface'
-import { deepMergeWithArrayOverwrite } from '@webundsoehne/deep-merge'
-import type { CreateApplicationRuleInterface } from '@webundsoehne/nx-tools'
-import { applyOverwriteWithDiff, createApplicationRule, Logger, convertStringToDirPath } from '@webundsoehne/nx-tools'
-import type { Schema as ExportsSchema } from '@webundsoehne/nx-tools/dist/schematics/exports/main.interface'
+import { deepMergeWithArrayOverwrite } from '@digiportal/deep-merge'
+import type { CreateApplicationRuleInterface } from '@digiportal/nx-tools'
+import { applyOverwriteWithDiff, createApplicationRule, Logger, convertStringToDirPath } from '@digiportal/nx-tools'
+import type { Schema as ExportsSchema } from '@digiportal/nx-tools/dist/schematics/exports/main.interface'
 
 export function createApplicationFiles (options: NormalizedSchema): Rule {
   return (_host: Tree, context: SchematicContext): Rule => {
@@ -23,7 +23,7 @@ export function createApplicationFiles (options: NormalizedSchema): Rule {
         context
       ),
 
-      externalSchematic<ExportsSchema>('@webundsoehne/nx-tools', 'exports', {
+      externalSchematic<ExportsSchema>('@digiportal/nx-tools', 'exports', {
         silent: true,
         skipFormat: true,
         templates: {

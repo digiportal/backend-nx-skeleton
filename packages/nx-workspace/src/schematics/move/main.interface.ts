@@ -1,4 +1,4 @@
-import type { BaseNormalizedSchemaPackageName, BaseSchemaWithParentAndConfigurationAndDestination, EnrichedProjectConfiguration } from '@webundsoehne/nx-tools'
+import type { BaseNormalizedSchemaPackageName, BaseSchemaWithParentAndConfigurationAndDestination, EnrichedProjectConfiguration } from '@digiportal/nx-tools'
 
 export interface Schema extends BaseSchemaWithParentAndConfigurationAndDestination {
   importPath?: string

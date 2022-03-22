@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$id": "@webundsoehne/nx-builders/tsc",
-  "title": "@webundsoehne/nx-builders/tsc",
+  "$id": "@digiportal/nx-builders/tsc",
+  "title": "@digiportal/nx-builders/tsc",
   "description": "Run Typescript compiler as builder.",
   "type": "object",
   "properties": {

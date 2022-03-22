@@ -19,16 +19,16 @@ import {
   SetApiInfoHeaderMiddleware,
   setEnvironmentVariables,
   ExtendedValidationPipe
-} from '@webundsoehne/nestjs-util'
+} from '@digiportal/nestjs-util'
 {% if server == enum.server.RESTFUL %}
 import {
   CacheLifetimeHelperInterceptor,
   InternalModule,
   RequestProfilerInterceptor,
-} from '@webundsoehne/nestjs-util-restful'
+} from '@digiportal/nestjs-util-restful'
 {% endif %}
 {% if enum.components.MICROSERVICE_CLIENT in components %}
-import { MicroserviceProviderModule } from '@webundsoehne/nestjs-util-microservices'
+import { MicroserviceProviderModule } from '@digiportal/nestjs-util-microservices'
 {% endif %}
 {% if enum.components.MICROSERVICE_CLIENT in components %}
 import { MessageQueues } from '@{{ packageScope }}/{{ constants.MICROSERVICE_PROVIDER_PACKAGE }}'

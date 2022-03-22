@@ -1,10 +1,10 @@
 import type { Rule, SchematicContext, Tree } from '@angular-devkit/schematics'
 import { chain } from '@angular-devkit/schematics'
 
+import { addDependenciesToPackageJsonRule, addNxInstallRule, Logger } from '@digiportal/nx-tools'
 import { updateNxBuildersWorkspaceIntegrationRule } from '@integration/nx-builders'
 import type { Schema } from '@schematics/init/main.interface'
 import { calculateDependencies } from '@utils/versions'
-import { addDependenciesToPackageJsonRule, addNxInstallRule, Logger } from '@webundsoehne/nx-tools'
 
 /**
  * A function to initiate builder depdencies. It may be wiser to call it via schematic.

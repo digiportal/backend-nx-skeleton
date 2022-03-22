@@ -2,9 +2,9 @@ import type { Rule } from '@angular-devkit/schematics'
 import { chain, noop } from '@angular-devkit/schematics'
 
 import type { NormalizedSchema } from '../main.interface'
+import { BrownieAvailableContainers, updateBrownieIntegrationRule, updateNxIntegrationRule } from '@digiportal/nx-tools'
 import type { NxNestProjectIntegration } from '@integration'
 import { AvailableComponents, AvailableDBTypes } from '@interfaces/available.constants'
-import { BrownieAvailableContainers, updateBrownieIntegrationRule, updateNxIntegrationRule } from '@webundsoehne/nx-tools'
 
 /**
  * Update integration with different interfaces.

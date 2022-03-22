@@ -1,4 +1,4 @@
-import { ConfigService } from '@webundsoehne/nestjs-util'
+import { ConfigService } from '@digiportal/nestjs-util'
 import { ConnectionOptions } from 'typeorm'
 
 const { mock: mockOptions = {}, directories, ...options } = ConfigService.get('database')

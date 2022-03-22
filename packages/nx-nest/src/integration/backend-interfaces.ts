@@ -2,7 +2,7 @@ import type { Tree } from '@angular-devkit/schematics'
 
 import type { BackendInterfacesWorkspaceIntegration } from './backend-interfaces.interface'
 import type { NxNestProjectIntegration } from './integration.interface'
-import { readWorkspaceProjects } from '@webundsoehne/nx-tools'
+import { readWorkspaceProjects } from '@digiportal/nx-tools'
 
 /**
  * Reads the backend interface integration part of the nx.json.

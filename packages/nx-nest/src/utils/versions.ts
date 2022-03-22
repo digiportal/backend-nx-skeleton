@@ -1,8 +1,8 @@
 import { VERSIONS } from './versions.constants'
+import type { PackageVersions } from '@digiportal/nx-tools'
+import { dependencyCalculator, AvailableTestsTypes } from '@digiportal/nx-tools'
 import { AvailableComponents, AvailableDBAdapters, AvailableDBTypes, AvailableServerTypes } from '@interfaces/available.constants'
 import type { NormalizedSchema } from '@schematics/application/main.interface'
-import type { PackageVersions } from '@webundsoehne/nx-tools'
-import { dependencyCalculator, AvailableTestsTypes } from '@webundsoehne/nx-tools'
 
 /**
  * Will calculate the dependencies depending on the components selected.

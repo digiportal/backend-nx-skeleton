@@ -3,7 +3,7 @@
   "private": true,
   "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
   "description": "Tailored NestJS NX Based Application Skeleton",
-  "author": "Backend <backend@webundsoehne.com>",
+  "author": "Backend <backend@digiportal.com>",
   "license": "MIT",
   "scripts": {
     "ls": "lerna la",

@@ -7,10 +7,10 @@ import { createApplicationFiles } from './lib/create-application-files'
 import { normalizeOptions } from './lib/normalize-options'
 import { updateIntegration } from './lib/update-integration'
 import type { Schema } from './main.interface'
+import { addEslintConfigRule, formatTreeRule, LINTER_VERSIONS, Logger, runInRule, updateTsConfigPathsRule } from '@digiportal/nx-tools'
+import type { SchematicRule } from '@digiportal/nx-tools'
 import { AvailableLibraryTypes } from '@interfaces/available.constants'
 import init from '@schematics/init/main'
-import { addEslintConfigRule, formatTreeRule, LINTER_VERSIONS, Logger, runInRule, updateTsConfigPathsRule } from '@webundsoehne/nx-tools'
-import type { SchematicRule } from '@webundsoehne/nx-tools'
 
 /**
  * Entrypoint to the schematic.

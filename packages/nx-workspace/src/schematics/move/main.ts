@@ -4,7 +4,7 @@ import type { Schema as NrwlSchema } from '@nrwl/workspace/src/generators/move/s
 
 import { normalizeOptions } from './lib/normalize-options'
 import type { Schema } from './main.interface'
-import { formatTreeRule, removeTsConfigPathsRule, updateTsConfigPathsRule } from '@webundsoehne/nx-tools'
+import { formatTreeRule, removeTsConfigPathsRule, updateTsConfigPathsRule } from '@digiportal/nx-tools'
 
 export default function (schema: Schema): Rule {
   return async (host: Tree, context: SchematicContext): Promise<Rule> => {

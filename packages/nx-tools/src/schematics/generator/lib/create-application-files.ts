@@ -33,7 +33,7 @@ export function createApplicationFiles (files: string, options: NormalizedSchema
         trigger: [
           {
             condition: !!options.exports,
-            rule: externalSchematic<ExportsSchema>('@webundsoehne/nx-tools', 'exports', {
+            rule: externalSchematic<ExportsSchema>('@digiportal/nx-tools', 'exports', {
               silent: true,
               skipFormat: false,
               templates: {

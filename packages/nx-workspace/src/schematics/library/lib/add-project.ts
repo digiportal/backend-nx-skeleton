@@ -3,9 +3,9 @@ import { join } from 'path'
 
 import type { SchematicTargets } from '../interfaces/add-project.interface'
 import type { NormalizedSchema } from '../main.interface'
+import type { EnrichedProjectConfiguration } from '@digiportal/nx-tools'
+import { AvailableTestsTypes, createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes } from '@digiportal/nx-tools'
 import { AvailableLibraryTypes } from '@interfaces/available.constants'
-import type { EnrichedProjectConfiguration } from '@webundsoehne/nx-tools'
-import { AvailableTestsTypes, createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes } from '@webundsoehne/nx-tools'
 
 /**
  * Add the project to the {workspace,angular}.json
@@ -17,7 +17,7 @@ export function addProject (options: NormalizedSchema): Rule {
 
     if (options.type === AvailableLibraryTypes.BUILDABLE) {
       targets.build = {
-        executor: '@webundsoehne/nx-builders:tsc',
+        executor: '@digiportal/nx-builders:tsc',
         options: {
           cwd: options.root,
           main: `${options.root}/src/main.ts`,
@@ -45,7 +45,7 @@ export function addProject (options: NormalizedSchema): Rule {
       }
 
       targets.serve = {
-        executor: '@webundsoehne/nx-builders:tsc',
+        executor: '@digiportal/nx-builders:tsc',
         options: {
           cwd: options.root,
           outputPath: `dist/${options.root}`,
@@ -59,7 +59,7 @@ export function addProject (options: NormalizedSchema): Rule {
 
     if (options.tests === AvailableTestsTypes.JEST) {
       targets.test = {
-        executor: '@webundsoehne/nx-builders:run',
+        executor: '@digiportal/nx-builders:run',
         options: {
           cwd: options.root,
           nodeOptions: '-r ts-node/register -r tsconfig-paths/register',

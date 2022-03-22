@@ -1,5 +1,5 @@
+import type { Schema as GeneratorBaseSchema, NormalizedSchema as GeneratorBaseNormalizedSchema } from '@digiportal/nx-tools/dist/schematics/generator/main.interface'
 import type { AvailableGenerators } from '@interfaces'
-import type { Schema as GeneratorBaseSchema, NormalizedSchema as GeneratorBaseNormalizedSchema } from '@webundsoehne/nx-tools/dist/schematics/generator/main.interface'
 
 type TypedBaseSchema = GeneratorBaseSchema<AvailableGenerators>
 

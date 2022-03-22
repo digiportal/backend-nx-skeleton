@@ -18,8 +18,8 @@ import {
   mergeDependencies,
   pipeProcessToLogger,
   runExecutor
-} from '@webundsoehne/nx-tools'
-import type { ExecaArguments, FileInputOutput, NodeBinaryPathExtensions } from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { ExecaArguments, FileInputOutput, NodeBinaryPathExtensions } from '@digiportal/nx-tools'
 
 try {
   require('dotenv').config()

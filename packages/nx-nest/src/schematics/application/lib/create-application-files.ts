@@ -4,15 +4,15 @@ import { join } from 'path'
 
 import { getSchematicFiles, SchematicFilesMap } from '../interfaces/file.constants'
 import type { NormalizedSchema } from '../main.interface'
+import { deepMergeWithArrayOverwrite } from '@digiportal/deep-merge'
+import type { CreateApplicationRuleInterface } from '@digiportal/nx-tools'
+import { addNxImplicitDependenciesRule, addSchematicTaskRule, applyOverwriteWithDiff, createApplicationRule, Logger, runInRule } from '@digiportal/nx-tools'
 import { AvailableComponents, AvailableDBAdapters, AvailableExtensions, AvailableGenerators, AvailableServerTypes } from '@interfaces/available.constants'
 import type { Schema as BackendInterfacesSchema } from '@schematics/backend-interfaces/main.interface'
 import { ComponentLocationsMap } from '@schematics/component/interfaces/file.constants'
 import type { Schema as ComponentSchema } from '@schematics/component/main.interface'
 import type { Schema as GeneratorSchema } from '@schematics/generator/main.interface'
 import type { Schema as MspSchema } from '@schematics/microservice-provider/main.interface'
-import { deepMergeWithArrayOverwrite } from '@webundsoehne/deep-merge'
-import type { CreateApplicationRuleInterface } from '@webundsoehne/nx-tools'
-import { addNxImplicitDependenciesRule, addSchematicTaskRule, applyOverwriteWithDiff, createApplicationRule, Logger, runInRule } from '@webundsoehne/nx-tools'
 
 /**
  * Create application files in tree.

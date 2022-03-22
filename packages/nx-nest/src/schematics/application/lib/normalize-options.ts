@@ -2,20 +2,6 @@ import type { SchematicContext, Tree } from '@angular-devkit/schematics'
 import { Listr } from 'listr2'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
-import type { NxNestProjectIntegration } from '@integration'
-import { readMicroserviceProviderWorkspaceIntegration } from '@integration'
-import { SchematicConstants } from '@interfaces'
-import {
-  AvailableComponents,
-  AvailableDBAdapters,
-  AvailableDBTypes,
-  AvailableExtensions,
-  AvailableExtensionsMap,
-  AvailableMicroserviceTypes,
-  AvailableServerTypes,
-  PrettyNamesForAvailableThingies
-} from '@interfaces/available.constants'
-import { generateMicroserviceCasing } from '@utils'
 import {
   AvailableTestsTypes,
   ensureNxRootListrTask,
@@ -30,7 +16,21 @@ import {
   normalizeRootDirectoryPrompt,
   NxProjectTypes,
   setSchemaDefaultsInContext
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { NxNestProjectIntegration } from '@integration'
+import { readMicroserviceProviderWorkspaceIntegration } from '@integration'
+import { SchematicConstants } from '@interfaces'
+import {
+  AvailableComponents,
+  AvailableDBAdapters,
+  AvailableDBTypes,
+  AvailableExtensions,
+  AvailableExtensionsMap,
+  AvailableMicroserviceTypes,
+  AvailableServerTypes,
+  PrettyNamesForAvailableThingies
+} from '@interfaces/available.constants'
+import { generateMicroserviceCasing } from '@utils'
 
 /**
  * Normalize the options passed in through angular-schematics.

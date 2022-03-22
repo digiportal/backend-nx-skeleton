@@ -3,9 +3,9 @@ import type { NestFastifyApplication } from '@nestjs/platform-fastify'
 import { FastifyAdapter } from '@nestjs/platform-fastify'
 
 import { createServerModule } from './server.module'
-import { LoggerService, ConfigService } from '@webundsoehne/nestjs-util'
+import { LoggerService, ConfigService } from '@digiportal/nestjs-util'
 {% if server == enum.server.RESTFUL %}
-import { SwaggerService } from '@webundsoehne/nestjs-util-restful'
+import { SwaggerService } from '@digiportal/nestjs-util-restful'
 {% endif %}
 
 export async function createApplication (): Promise<void> {

@@ -3,7 +3,7 @@ import { Timeout } from '@nestjs/schedule'
 import { InjectConnection } from '@nestjs/typeorm'
 import { Connection } from 'typeorm'
 
-import { InjectMaintenanceService, MaintenanceService, Retry, UseMaintenanceLocker } from '@webundsoehne/nestjs-util'
+import { InjectMaintenanceService, MaintenanceService, Retry, UseMaintenanceLocker } from '@digiportal/nestjs-util'
 
 @Injectable()
 export class MigrationTask {

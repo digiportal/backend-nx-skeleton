@@ -1,15 +1,15 @@
 {
-  "name": "@webundsoehne-private/nx-nest",
-  "version": "1.0.0",
+  "name": "@digiportal/nx-nest",
+  "version": "4.2.8",
   "description": "Nest Plugin for Nx",
   "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "Backend <backend@webundsoehne.com>",
+  "author": "Backend <backend@digiportal.com>",
   "license": "ISC",
   "publishConfig": {
     "access": "public",
-    "registry": "https://verdaccio.webundsoehne.com/"
+    "@digiportal:registry": "https://npm.pkg.github.com"
   },
   "schematics": "./schematics.json",
   "scripts": {
@@ -38,9 +38,9 @@
     "@angular-devkit/core": "^13.2.3",
     "@angular-devkit/schematics": "^13.2.3",
     "@nestjs/schematics": "^8.0.6",
-    "@webundsoehne/deep-merge": "*",
-    "@webundsoehne/nx-builders": "*",
-    "@webundsoehne/nx-tools": "*",
+    "@digiportal/deep-merge": "*",
+    "@digiportal/nx-builders": "*",
+    "@digiportal/nx-tools": "*",
     "enquirer": "^2.3.6",
     "execa": "^5.1.1",
     "listr2": "^4.0.4"

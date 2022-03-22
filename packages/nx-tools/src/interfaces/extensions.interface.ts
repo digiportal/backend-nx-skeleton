@@ -1,4 +1,4 @@
-import type { ValueOf } from '@webundsoehne/ts-utility-types'
+import type { ValueOf } from '@digiportal/ts-utility-types'
 
 export type ExtensionsMap<ExtensionsType extends Record<string, any>, Options extends Record<PropertyKey, any>> = Record<
 ValueOf<ExtensionsType>,

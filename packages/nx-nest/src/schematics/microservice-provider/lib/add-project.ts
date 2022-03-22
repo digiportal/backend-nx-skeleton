@@ -3,7 +3,7 @@ import type { Rule } from '@angular-devkit/schematics'
 import { join } from 'path'
 
 import type { NormalizedSchema } from '../main.interface'
-import { createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes } from '@webundsoehne/nx-tools'
+import { createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes } from '@digiportal/nx-tools'
 
 export function addProject (options: NormalizedSchema): Rule {
   // we dont need to enforce types here, since it is only going to be linting

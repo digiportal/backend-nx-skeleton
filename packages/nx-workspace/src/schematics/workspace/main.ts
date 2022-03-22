@@ -5,7 +5,7 @@ import { TaskTokens } from './constants'
 import { createApplicationFiles } from './lib/create-application-files'
 import { normalizeOptions } from './lib/normalize-options'
 import type { Schema } from './main.interface'
-import { addGitTask, addInstallTask, addMultipleDependentTasksRule, addRunWorkspaceScriptTask, Logger, PackageManagerUsableCommands, runInRule } from '@webundsoehne/nx-tools'
+import { addGitTask, addInstallTask, addMultipleDependentTasksRule, addRunWorkspaceScriptTask, Logger, PackageManagerUsableCommands, runInRule } from '@digiportal/nx-tools'
 
 /**
  * Entrypoint to the schematic.

@@ -2,9 +2,9 @@ import type { SchematicContext, Tree } from '@angular-devkit/schematics'
 import { Listr } from 'listr2'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
+import type { ArrayElement } from '@digiportal/ts-utility-types'
 import type { GenerateExportsJinjaTemplateOptions } from '@rules/generate-exports.rule.interface'
 import { isVerbose, relativeToNxRoot, setSchemaDefaultsInContext } from '@utils'
-import type { ArrayElement } from '@webundsoehne/ts-utility-types'
 
 /**
  * Normalize options for the schematic.

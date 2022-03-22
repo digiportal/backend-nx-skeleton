@@ -6,7 +6,7 @@ export function eslintJson (options: { packageScope?: string, override?: Record<
     options.override ?? {
       root: true,
       plugins: ['@nrwl/nx'],
-      extends: ['@webundsoehne/eslint-config/typescript-dynamic'],
+      extends: ['@digiportal/eslint-config/typescript-dynamic'],
       rules: {
         'import/order': [
           'error',

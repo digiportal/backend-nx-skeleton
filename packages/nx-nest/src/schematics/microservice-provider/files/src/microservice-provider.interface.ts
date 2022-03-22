@@ -1,5 +1,5 @@
 import type { MessageQueueMap, MessageQueuePatterns, MessageQueues } from './microservice-provider.constants'
-import type { GetMicroserviceMessageRequestFromMap, GetMicroserviceMessageResponseFromMap, MicroserviceProviderService } from '@webundsoehne/nestjs-util-microservices'
+import type { GetMicroserviceMessageRequestFromMap, GetMicroserviceMessageResponseFromMap, MicroserviceProviderService } from '@digiportal/nestjs-util-microservices'
 
 /**
  * Helper type for microservice client.

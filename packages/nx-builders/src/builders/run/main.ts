@@ -7,7 +7,7 @@ import { pathExistsSync } from 'fs-extra'
 import { join } from 'path'
 
 import type { NormalizedRunBuilderOptions, RunBuilderOptions } from './main.interface'
-import type { ExecaArguments, NodeBinaryPathExtensions } from '@webundsoehne/nx-tools'
+import type { ExecaArguments, NodeBinaryPathExtensions } from '@digiportal/nx-tools'
 import {
   BaseExecutor,
   checkPathsExists,
@@ -17,7 +17,7 @@ import {
   runExecutor,
   setNodeOptionsEnvironmentVariables,
   getNodeBinaryPath
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
 
 try {
   require('dotenv').config()

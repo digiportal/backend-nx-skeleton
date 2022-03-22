@@ -4,7 +4,7 @@ import { chain } from '@angular-devkit/schematics'
 import { createApplicationFiles } from './lib/create-application-files'
 import { normalizeOptions } from './lib/normalize-options'
 import type { Schema } from './main.interface'
-import { formatTreeRule, Logger, runInRule } from '@webundsoehne/nx-tools'
+import { formatTreeRule, Logger, runInRule } from '@digiportal/nx-tools'
 
 /**
  * @param  {Schema} schema

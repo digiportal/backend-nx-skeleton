@@ -2,10 +2,6 @@ import type { SchematicContext, Tree } from '@angular-devkit/schematics'
 import { Listr } from 'listr2'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
-import type { NxNestProjectIntegration } from '@integration'
-import { readMicroserviceProviderWorkspaceIntegration } from '@integration'
-import { SchematicConstants } from '@interfaces'
-import { generateMicroserviceCasing } from '@utils/generate-microservice-casing'
 import {
   isVerbose,
   normalizePackageJsonNamePrompt,
@@ -14,7 +10,11 @@ import {
   NxProjectTypes,
   setSchemaDefaultsInContext,
   ensureNxRootListrTask
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { NxNestProjectIntegration } from '@integration'
+import { readMicroserviceProviderWorkspaceIntegration } from '@integration'
+import { SchematicConstants } from '@interfaces'
+import { generateMicroserviceCasing } from '@utils/generate-microservice-casing'
 
 export async function normalizeOptions (host: Tree, _context: SchematicContext, options: Schema): Promise<NormalizedSchema> {
   return new Listr<NormalizedSchema>(

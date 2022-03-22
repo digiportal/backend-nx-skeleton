@@ -1,4 +1,4 @@
-import type { EnvironmentVariables, ExecaArguments } from '@webundsoehne/nx-tools'
+import type { EnvironmentVariables, ExecaArguments } from '@digiportal/nx-tools'
 
 /**
  * Options for run builder

@@ -1,15 +1,15 @@
 {
-  "name": "@webundsoehne-private/nx-workspace",
-  "version": "1.0.0",
+  "name": "@digiportal/nx-workspace",
+  "version": "4.2.11",
   "description": "Workspace plugin for Nx",
   "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "Backend <backend@webundsoehne.com>",
+  "author": "Backend <backend@digiportal.com>",
   "license": "ISC",
   "publishConfig": {
     "access": "public",
-    "registry": "https://verdaccio.webundsoehne.com/"
+    "@digiportal:registry": "https://npm.pkg.github.com"
   },
   "schematics": "./schematics.json",
   "scripts": {
@@ -36,9 +36,9 @@
     "@angular-devkit/schematics": "^13.2.3",
     "@nrwl/devkit": "^13.8.2",
     "@nrwl/workspace": "^13.8.2",
-    "@webundsoehne/deep-merge": "*",
-    "@webundsoehne/nx-builders": "*",
-    "@webundsoehne/nx-tools": "*",
+    "@digiportal/deep-merge": "*",
+    "@digiportal/nx-builders": "*",
+    "@digiportal/nx-tools": "*",
     "enquirer": "^2.3.6",
     "listr2": "^4.0.4",
     "typescript": "^4.6.0-dev.20220203"

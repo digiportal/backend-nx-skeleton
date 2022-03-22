@@ -1,4 +1,4 @@
-import type { AvailableAssetGlob, EnvironmentVariables, FileInputOutput } from '@webundsoehne/nx-tools'
+import type { AvailableAssetGlob, EnvironmentVariables, FileInputOutput } from '@digiportal/nx-tools'
 
 /**
  * TSC Builder options

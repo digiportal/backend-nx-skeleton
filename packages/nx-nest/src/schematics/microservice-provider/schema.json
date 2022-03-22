@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$id": "@webundsoehne-private/nx-nest/microservice-provider",
-  "title": "@webundsoehne-private/nx-nest/microservice-provider",
+  "$id": "@digiportal/nx-nest/microservice-provider",
+  "title": "@digiportal/nx-nest/microservice-provider",
   "description": "Generate a common library for nestjs microservice-provider.",
   "type": "object",
   "properties": {

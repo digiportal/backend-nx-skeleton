@@ -8,7 +8,7 @@ import {
   normalizeParentApplicationPrompt,
   normalizeParentConfigurationPrompt,
   setSchemaDefaultsInContext
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
 
 /**
  * Normalize the options passed in through angular-schematics.

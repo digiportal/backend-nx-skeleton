@@ -1,9 +1,9 @@
+import type { BaseNormalizedSchemaWithParent, BaseSchemaWithParentAndConfiguration, GeneratedNameCases } from '@digiportal/nx-tools'
 import type { NxNestProjectIntegration } from '@integration'
 import type { SchematicConstants } from '@interfaces'
 import type { AvailableComponents, AvailableServerTypes } from '@interfaces/available.constants'
 import type { NormalizedSchema as ApplicationNormalizedSchema } from '@schematics/application/main.interface'
 import type { GeneratedMicroserviceCasing } from '@utils/generate-microservice-casing.interface'
-import type { BaseNormalizedSchemaWithParent, BaseSchemaWithParentAndConfiguration, GeneratedNameCases } from '@webundsoehne/nx-tools'
 
 /**
  * This is the unparsed schema coming from the angular-schematics

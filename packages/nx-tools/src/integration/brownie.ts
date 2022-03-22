@@ -3,8 +3,8 @@ import type { Rule, Tree } from '@angular-devkit/schematics'
 import type { BrownieAvailableContainers, BrownieIntegration } from './brownie.interface'
 import { readNxWorkspaceIntegration, readProjectConfiguration } from './integration'
 import type { BaseIntegration } from './integration.interface'
+import { deepMergeWithUniqueMergeArray } from '@digiportal/deep-merge'
 import { updateNxIntegrationRule } from '@rules/integration.rule'
-import { deepMergeWithUniqueMergeArray } from '@webundsoehne/deep-merge'
 
 /**
  * Updates brownie integration by wiriting data to nx.json

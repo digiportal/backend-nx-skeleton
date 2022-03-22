@@ -1,6 +1,6 @@
 import type { Versions } from './versions.interface'
+import { AvailableTestsTypes } from '@digiportal/nx-tools'
 import { AvailableComponents, AvailableDBAdapters, AvailableDBTypes, AvailableServerTypes } from '@interfaces/available.constants'
-import { AvailableTestsTypes } from '@webundsoehne/nx-tools'
 
 export const VERSIONS: Versions = {
   base: {
@@ -9,7 +9,7 @@ export const VERSIONS: Versions = {
         '@nestjs/common': '^8.2.5',
         '@nestjs/core': '^8.2.5',
         rxjs: { version: '^7.5.2', implicit: true },
-        '@webundsoehne/nestjs-util': '^5.0.1',
+        '@digiportal/nestjs-util': '^5.0.1',
         'class-transformer': { version: '^0.5.1', implicit: true },
         'class-validator': { version: '^0.13.2', implicit: true },
         'reflect-metadata': { version: '^0.1.13', implicit: true }
@@ -18,12 +18,12 @@ export const VERSIONS: Versions = {
     microservice: {
       deps: {
         '@nestjs/microservices': '^8.2.5',
-        '@webundsoehne/nestjs-util-microservices': '^1.0.0'
+        '@digiportal/nestjs-util-microservices': '^1.0.0'
       }
     },
     builder: {
       devDeps: {
-        '@webundsoehne/nx-builders': '^5.0.5'
+        '@digiportal/nx-builders': '^5.0.5'
       }
     }
   },
@@ -32,7 +32,7 @@ export const VERSIONS: Versions = {
       '@nestjs/platform-fastify': '^8.2.5',
       'fastify-swagger': { version: '^4.13.1', implicit: true },
       '@nestjs/swagger': '^5.1.5',
-      '@webundsoehne/nestjs-util-restful': '^1.0.0'
+      '@digiportal/nestjs-util-restful': '^1.0.0'
     }
   },
   [AvailableServerTypes.GRAPHQL]: {
@@ -42,7 +42,7 @@ export const VERSIONS: Versions = {
       'apollo-server-fastify': { version: '^3.6.2', implicit: true },
       graphql: { version: '^15', implicit: true },
       'graphql-tools': { version: '^8.2.0', implicit: true },
-      '@webundsoehne/nestjs-util-graphql': '^1.0.0'
+      '@digiportal/nestjs-util-graphql': '^1.0.0'
     }
   },
   [AvailableComponents.BG_TASK]: {

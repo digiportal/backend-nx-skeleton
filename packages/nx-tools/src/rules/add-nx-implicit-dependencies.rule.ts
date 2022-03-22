@@ -1,7 +1,7 @@
 import type { Rule } from '@angular-devkit/schematics'
 import { updateNxJsonInTree } from '@nrwl/workspace'
 
-import { deepMergeWithUniqueMergeArray } from '@webundsoehne/deep-merge'
+import { deepMergeWithUniqueMergeArray } from '@digiportal/deep-merge'
 
 export function addNxImplicitDependenciesRule (deps: Record<string, string[]>): Rule {
   return updateNxJsonInTree((json) => {

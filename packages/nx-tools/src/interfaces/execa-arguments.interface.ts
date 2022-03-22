@@ -1,6 +1,6 @@
 import type execa from 'execa'
 
-import type { Writeable } from '@webundsoehne/ts-utility-types'
+import type { Writeable } from '@digiportal/ts-utility-types'
 
 /**
  * Just some arguments to spawn execa.

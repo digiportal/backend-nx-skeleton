@@ -13,9 +13,9 @@ import { updateNxJsonInTree } from '@nrwl/workspace'
 
 import type { BaseIntegration, BaseNxJsonIntegration } from './integration.interface'
 import { convertAngularTreeToNxTree } from './nx-integration'
+import { deepMergeWithArrayOverwrite, deepMergeWithUniqueMergeArray } from '@digiportal/deep-merge'
 import type { EnrichedNxConfiguration, EnrichedProjectConfiguration } from '@interfaces/nx-json.interface'
 import { Logger } from '@utils'
-import { deepMergeWithArrayOverwrite, deepMergeWithUniqueMergeArray } from '@webundsoehne/deep-merge'
 
 /**
  * Updates nx integration by saving values like prior configuration or so for having a memory.

@@ -6,11 +6,7 @@ import { join } from 'path'
 
 import { ComponentLocationsMap } from '../interfaces/file.constants'
 import type { AvailableComponentsSelection, NormalizedSchema, Schema } from '../main.interface'
-import type { NxNestProjectIntegration } from '@integration'
-import { SchematicConstants } from '@interfaces'
-import { AvailableComponents, AvailableServerTypes, PrettyNamesForAvailableThingies } from '@interfaces/available.constants'
-import { generateMicroserviceCasing } from '@utils'
-import type { ConvertToPromptType } from '@webundsoehne/nx-tools'
+import type { ConvertToPromptType } from '@digiportal/nx-tools'
 import {
   generateNameCases,
   isVerbose,
@@ -19,7 +15,11 @@ import {
   normalizeWorkspacePackageScopePrompt,
   setSchemaDefaultsInContext,
   ensureNxRootListrTask
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { NxNestProjectIntegration } from '@integration'
+import { SchematicConstants } from '@interfaces'
+import { AvailableComponents, AvailableServerTypes, PrettyNamesForAvailableThingies } from '@interfaces/available.constants'
+import { generateMicroserviceCasing } from '@utils'
 
 /**
  * @param  {Tree} host

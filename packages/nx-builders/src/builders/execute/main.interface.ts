@@ -1,4 +1,4 @@
-import type { EnvironmentVariables } from '@webundsoehne/nx-tools'
+import type { EnvironmentVariables } from '@digiportal/nx-tools'
 
 /**
  * Options for execute

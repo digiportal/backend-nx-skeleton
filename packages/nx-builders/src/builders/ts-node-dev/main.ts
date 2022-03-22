@@ -4,8 +4,8 @@ import delay from 'delay'
 import execa from 'execa'
 
 import type { TsNodeBuilderOptions } from './main.interface'
-import { BaseExecutor, checkPathsExists, getNodeBinaryPathExtensions, pipeProcessToLogger, removePathRoot, runExecutor } from '@webundsoehne/nx-tools'
-import type { ExecaArguments, NodeBinaryPathExtensions } from '@webundsoehne/nx-tools'
+import { BaseExecutor, checkPathsExists, getNodeBinaryPathExtensions, pipeProcessToLogger, removePathRoot, runExecutor } from '@digiportal/nx-tools'
+import type { ExecaArguments, NodeBinaryPathExtensions } from '@digiportal/nx-tools'
 
 try {
   require('dotenv').config()

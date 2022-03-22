@@ -1,9 +1,9 @@
 {
-  "name": "@webundsoehne/nx-builders",
+  "name": "@digiportal/nx-builders",
   "schematics": {
     "init": {
       "factory": "./dist/schematics/init/main",
-      "description": "Install dependencies for @webundsoehne/nx-builders plugin.",
+      "description": "Install dependencies for @digiportal/nx-builders plugin.",
       "schema": "./dist/schematics/init/schema.json"
     }
   }

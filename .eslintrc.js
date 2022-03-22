@@ -3,6 +3,6 @@
 module.exports = {
   extends: ['./packages/eslint-config/typescript-dynamic', './packages/eslint-config/import-strict'],
   rules: {
-    ...require('@webundsoehne/eslint-config/utils').generateImportGroups({ tsconfigDir: __dirname })
+    ...require('@digiportal/eslint-config/utils').generateImportGroups({ tsconfigDir: __dirname })
   }
 }

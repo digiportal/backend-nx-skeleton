@@ -2,7 +2,7 @@ import type { Rule } from '@angular-devkit/schematics'
 import { chain } from '@angular-devkit/schematics'
 
 import type { NormalizedSchema } from '../main.interface'
-import { removeNxJsonImplicitDependencies, removeTsConfigPathsRule } from '@webundsoehne/nx-tools'
+import { removeNxJsonImplicitDependencies, removeTsConfigPathsRule } from '@digiportal/nx-tools'
 
 /**
  * Update integration with different interfaces.

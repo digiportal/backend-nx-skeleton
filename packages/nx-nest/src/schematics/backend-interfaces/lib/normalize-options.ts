@@ -2,10 +2,7 @@ import type { SchematicContext, Tree } from '@angular-devkit/schematics'
 import { Listr } from 'listr2'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
-import type { NxNestProjectIntegration } from '@integration'
-import { readBackendInterfacesWorkspaceIntegration } from '@integration/backend-interfaces'
-import { AvailableDBAdapters, SchematicConstants } from '@interfaces'
-import { uniqueArrayFilter } from '@webundsoehne/deep-merge'
+import { uniqueArrayFilter } from '@digiportal/deep-merge'
 import {
   isVerbose,
   normalizeNamePrompt,
@@ -15,7 +12,10 @@ import {
   NxProjectTypes,
   setSchemaDefaultsInContext,
   ensureNxRootListrTask
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { NxNestProjectIntegration } from '@integration'
+import { readBackendInterfacesWorkspaceIntegration } from '@integration/backend-interfaces'
+import { AvailableDBAdapters, SchematicConstants } from '@interfaces'
 
 export async function normalizeOptions (host: Tree, _context: SchematicContext, options: Schema): Promise<NormalizedSchema> {
   return new Listr<NormalizedSchema>(

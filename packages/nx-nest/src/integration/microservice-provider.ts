@@ -2,7 +2,7 @@ import type { Tree } from '@angular-devkit/schematics'
 
 import type { NxNestProjectIntegration } from './integration.interface'
 import type { MicroserviceProviderWorkspaceIntegration } from './microservice-provider.interface'
-import { readWorkspaceProjects } from '@webundsoehne/nx-tools'
+import { readWorkspaceProjects } from '@digiportal/nx-tools'
 
 /**
  * Reads microservice integration part of the nx.json.

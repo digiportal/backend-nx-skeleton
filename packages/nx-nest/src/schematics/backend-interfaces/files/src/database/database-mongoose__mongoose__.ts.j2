@@ -1,5 +1,5 @@
 import { MongooseModuleOptions } from '@nestjs/mongoose'
-import { ConfigService } from '@webundsoehne/nestjs-util'
+import { ConfigService } from '@digiportal/nestjs-util'
 
 const { mock: mockOptions = {}, ...options } = ConfigService.get('database')
 

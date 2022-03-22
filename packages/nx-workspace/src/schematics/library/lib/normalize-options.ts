@@ -2,8 +2,6 @@ import type { SchematicContext, Tree } from '@angular-devkit/schematics'
 import { Listr } from 'listr2'
 
 import type { NormalizedSchema, Schema } from '../main.interface'
-import type { NxWorkspaceIntegration } from '@integration'
-import { AvailableLibraryTypes, PrettyNamesForAvailableThingies } from '@interfaces/available.constants'
 import {
   AvailableTestsTypes,
   ensureNxRootListrTask,
@@ -16,7 +14,9 @@ import {
   normalizeRootDirectoryPrompt,
   NxProjectTypes,
   setSchemaDefaultsInContext
-} from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { NxWorkspaceIntegration } from '@integration'
+import { AvailableLibraryTypes, PrettyNamesForAvailableThingies } from '@interfaces/available.constants'
 
 /**
  * Normalize the options passed in through angular-schematics.

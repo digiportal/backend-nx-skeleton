@@ -1,7 +1,7 @@
+import type { BaseNormalizedSchema, BaseSchema, SchemaPriorConfiguration } from '@digiportal/nx-tools'
 import type { SchematicConstants } from '@interfaces'
 import type { AvailableMicroserviceTypes } from '@interfaces/available.constants'
 import type { GeneratedMicroserviceCasing } from '@utils/generate-microservice-casing.interface'
-import type { BaseNormalizedSchema, BaseSchema, SchemaPriorConfiguration } from '@webundsoehne/nx-tools'
 
 /**
  * The options that it gets from angular-cli

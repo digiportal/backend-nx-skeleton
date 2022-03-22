@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$id": "@webundsoehne/nx-builders/execute",
-  "title": "@webundsoehne/nx-builders/execute",
+  "$id": "@digiportal/nx-builders/execute",
+  "title": "@digiportal/nx-builders/execute",
   "description": "Execute multiple builders with hiearachy.",
   "type": "object",
   "properties": {

@@ -1,4 +1,4 @@
-import type { BaseNormalizedSchemaPackageName, BaseSchemaWithParentAndConfiguration } from '@webundsoehne/nx-tools'
+import type { BaseNormalizedSchemaPackageName, BaseSchemaWithParentAndConfiguration } from '@digiportal/nx-tools'
 
 export type Schema = BaseSchemaWithParentAndConfiguration
 

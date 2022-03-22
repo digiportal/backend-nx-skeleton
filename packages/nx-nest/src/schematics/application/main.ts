@@ -6,8 +6,6 @@ import { createApplicationFiles } from './lib/create-application-files'
 import { normalizeOptions } from './lib/normalize-options'
 import { updateIntegration } from './lib/update-integration'
 import type { Schema } from './main.interface'
-import init from '@schematics/init/main'
-import { calculateDependencies } from '@utils/versions'
 import {
   addDependenciesToProjectPackageJsonRule,
   addEslintConfigRule,
@@ -17,8 +15,10 @@ import {
   runInRule,
   updatePackageJsonForProjectRule,
   updateTsConfigPathsRule
-} from '@webundsoehne/nx-tools'
-import type { SchematicRule } from '@webundsoehne/nx-tools'
+} from '@digiportal/nx-tools'
+import type { SchematicRule } from '@digiportal/nx-tools'
+import init from '@schematics/init/main'
+import { calculateDependencies } from '@utils/versions'
 
 /**
  * Entrypoint to the schematic.

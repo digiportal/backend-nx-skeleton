@@ -16,9 +16,9 @@ import { getDatabaseOptions } from '../util/database'
 {% endif %}
 import {
   ConfigService
-} from '@webundsoehne/nestjs-util'
+} from '@digiportal/nestjs-util'
 {% if enum.components.MICROSERVICE_CLIENT in components %}
-import { MicroserviceProviderModule } from '@webundsoehne/nestjs-util-microservices'
+import { MicroserviceProviderModule } from '@digiportal/nestjs-util-microservices'
 {% endif %}
 
 import * as modules from './modules'

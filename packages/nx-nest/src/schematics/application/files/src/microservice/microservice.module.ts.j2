@@ -1,4 +1,4 @@
-import { ConfigService, GlobalExceptionFilter, ExtendedValidationPipe } from '@webundsoehne/nestjs-util'
+import { ConfigService, GlobalExceptionFilter, ExtendedValidationPipe } from '@digiportal/nestjs-util'
 import { Module, NestModule, ClassSerializerInterceptor } from '@nestjs/common'
 import { APP_FILTER, APP_PIPE, APP_INTERCEPTOR } from '@nestjs/core'
 {% if database is defined and enum.dbAdapters.TYPEORM in database %}
@@ -6,9 +6,9 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 {% elif database is defined and enum.dbAdapters.MONGOOSE in database %}
 import { MongooseModule } from '@nestjs/mongoose'
 {% endif %}
-import { RpcGlobalExceptionFilter } from '@webundsoehne/nestjs-util-microservices'
+import { RpcGlobalExceptionFilter } from '@digiportal/nestjs-util-microservices'
 {% if enum.components.MICROSERVICE_CLIENT in components %}
-import { MicroserviceProviderModule } from '@webundsoehne/nestjs-util-microservices'
+import { MicroserviceProviderModule } from '@digiportal/nestjs-util-microservices'
 {% endif %}
 
 import * as modules from './modules'

@@ -4,10 +4,10 @@ import { join } from 'path'
 import type { SchematicTargets } from '../interfaces/add-project.interface'
 import { SchematicFilesMap } from '../interfaces/file.constants'
 import type { NormalizedSchema } from '../main.interface'
+import type { EnrichedProjectConfiguration } from '@digiportal/nx-tools'
+import { AvailableTestsTypes, createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes, readWorkspaceLayout } from '@digiportal/nx-tools'
 import { SchematicConstants } from '@interfaces'
 import { AvailableComponents, AvailableDBAdapters, AvailableExtensions } from '@interfaces/available.constants'
-import type { EnrichedProjectConfiguration } from '@webundsoehne/nx-tools'
-import { AvailableTestsTypes, createWorkspaceProjectRule, generateProjectLintTarget, NxProjectTypes, readWorkspaceLayout } from '@webundsoehne/nx-tools'
 
 /**
  * Add the project to the {workspace,angular}.json
@@ -18,7 +18,7 @@ export function addProject (options: NormalizedSchema): Rule {
     const targets: SchematicTargets = {} as SchematicTargets
 
     targets.build = {
-      executor: '@webundsoehne/nx-builders:tsc',
+      executor: '@digiportal/nx-builders:tsc',
       options: {
         cwd: options.root,
         main: `${options.root}/src/main.ts`,
@@ -53,7 +53,7 @@ export function addProject (options: NormalizedSchema): Rule {
     // prefer server mode
     if (options.components.includes(AvailableComponents.SERVER)) {
       targets.serve = {
-        executor: '@webundsoehne/nx-builders:ts-node-dev',
+        executor: '@digiportal/nx-builders:ts-node-dev',
         options: {
           cwd: options.root,
           main: join(options.root, 'src/main.ts'),
@@ -65,7 +65,7 @@ export function addProject (options: NormalizedSchema): Rule {
       }
     } else if (options.components.includes(AvailableComponents.MICROSERVICE_SERVER)) {
       targets.serve = {
-        executor: '@webundsoehne/nx-builders:ts-node-dev',
+        executor: '@digiportal/nx-builders:ts-node-dev',
         options: {
           cwd: options.root,
           main: join(options.root, 'src/main.ts'),
@@ -77,7 +77,7 @@ export function addProject (options: NormalizedSchema): Rule {
       }
     } else if (options.components.includes(AvailableComponents.BG_TASK)) {
       targets.serve = {
-        executor: '@webundsoehne/nx-builders:ts-node-dev',
+        executor: '@digiportal/nx-builders:ts-node-dev',
         options: {
           cwd: options.root,
           main: join(options.root, 'src/main.ts'),
@@ -91,7 +91,7 @@ export function addProject (options: NormalizedSchema): Rule {
 
     if (options.tests === AvailableTestsTypes.JEST) {
       targets.test = {
-        executor: '@webundsoehne/nx-builders:run',
+        executor: '@digiportal/nx-builders:run',
         options: {
           cwd: options.root,
           nodeOptions: '-r ts-node/register -r tsconfig-paths/register',
@@ -142,7 +142,7 @@ export function addProject (options: NormalizedSchema): Rule {
 
     if (options.components.includes(AvailableComponents.COMMAND)) {
       targets.command = {
-        executor: '@webundsoehne/nx-builders:run',
+        executor: '@digiportal/nx-builders:run',
         options: {
           cwd: options.root,
           command: './src/main.ts',
@@ -163,7 +163,7 @@ export function addProject (options: NormalizedSchema): Rule {
         : join(options.sourceRoot, SchematicFilesMap.UTILS)
 
       targets.migration = {
-        executor: '@webundsoehne/nx-builders:run',
+        executor: '@digiportal/nx-builders:run',
         options: {
           cwd: options.root,
           nodeOptions: '-r ts-node/register -r tsconfig-paths/register',
@@ -191,7 +191,7 @@ export function addProject (options: NormalizedSchema): Rule {
       }
 
       targets.seed = {
-        executor: '@webundsoehne/nx-builders:run',
+        executor: '@digiportal/nx-builders:run',
         options: {
           cwd: options.root,
           command: `typeorm-seeding --configName=${join(configurationBasePath, 'orm.config.ts')} seed`,
