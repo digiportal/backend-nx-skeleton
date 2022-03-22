@@ -2,7 +2,7 @@
   "name": "@digiportal/nx-workspace",
   "version": "4.2.11",
   "description": "Workspace plugin for Nx",
-  "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
+  "repository": "https://github.com/digiportal/backend-nx-skeleton",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "Backend <backend@digiportal.com>",

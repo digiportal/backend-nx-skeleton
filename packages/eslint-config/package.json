@@ -3,7 +3,7 @@
   "version": "5.1.1",
   "description": "Eslint configuration for Web&Söhne applications.",
   "main": "index.js",
-  "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
+  "repository": "https://github.com/digiportal/backend-nx-skeleton",
   "author": "Backend <backend@digiportal.com>",
   "license": "ISC",
   "publishConfig": {

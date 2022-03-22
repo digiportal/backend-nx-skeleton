@@ -2,7 +2,7 @@
   "name": "@digiportal/nx-builders",
   "version": "5.2.4",
   "description": "TSC compiler for NX.",
-  "repository": "https://gitlab.tailored-apps.com/ckilic/nx-test",
+  "repository": "https://github.com/digiportal/backend-nx-skeleton",
   "author": "Backend <backend@digiportal.com>",
   "license": "ISC",
   "main": "./dist/index.js",
